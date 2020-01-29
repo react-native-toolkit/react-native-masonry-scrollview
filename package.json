@@ -1,0 +1,26 @@
+{
+  "name": "react-native-masonry-scrollview",
+  "version": "1.0.0",
+  "description": "A React Native Masonry ScrollView that extends the in-built ScrollView component",
+  "main": "lib/index.js",
+  "author": "DaniAkash <s.daniakash@gmail.com> (https://github.com/DaniAkash)",
+  "repository": "DaniAkash/react-native-masonry-scrollview",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-native",
+    "masonry",
+    "scrollview",
+    "masonry-scroll"
+  ],
+  "devDependencies": {
+    "@types/react": "^16.9.19",
+    "@types/react-native": "^0.61.7",
+    "husky": "^4.2.1",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "react": "^16.12.0",
+    "react-native": "^0.61.5",
+    "typescript": "^3.7.5"
+  }
+}
