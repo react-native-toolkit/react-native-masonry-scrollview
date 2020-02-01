@@ -15,9 +15,9 @@ export interface RNMasonryScrollViewProps extends ScrollViewProps {
   evenColumnStyle?: StyleProp<ViewStyle>;
 }
 
-function generateMasonryGrid<T>(data: T[]): T[][] {
+function generateMasonryGrid<T>(data: T[], columns: number): T[][] {
   return data.reduce((collection: T[][], child: T, childIndex: number) => {
-    const itemIndex = childIndex % 4;
+    const itemIndex = childIndex % columns;
     if (collection[itemIndex]) {
       collection[itemIndex].push(child);
     } else {
@@ -36,7 +36,7 @@ const RNMasonryScrollView = ({
   evenColumnStyle = null,
   ...otherProps
 }: RNMasonryScrollViewProps) => {
-  const masonryGrid = generateMasonryGrid(children);
+  const masonryGrid = generateMasonryGrid(children, columns);
 
   return (
     <ScrollView {...otherProps}>
