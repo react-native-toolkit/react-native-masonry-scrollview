@@ -4,7 +4,8 @@ import {
   ScrollViewProps,
   View,
   StyleProp,
-  ViewStyle
+  ViewStyle,
+  StyleSheet
 } from "react-native";
 
 export interface RNMasonryScrollViewProps extends ScrollViewProps {
@@ -39,7 +40,7 @@ const RNMasonryScrollView = ({
   const masonryGrid = generateMasonryGrid(children, columns);
 
   return (
-    <ScrollView {...otherProps}>
+    <ScrollView contentContainerStyle={styles.columnStyle} {...otherProps}>
       {masonryGrid.map((column, columnIndex) => {
         return (
           <View
@@ -56,5 +57,9 @@ const RNMasonryScrollView = ({
     </ScrollView>
   );
 };
+
+const styles = StyleSheet.create({
+  columnStyle: { flexDirection: "row" }
+});
 
 export default RNMasonryScrollView;
