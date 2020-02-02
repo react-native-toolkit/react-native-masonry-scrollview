@@ -35,17 +35,27 @@ const RNMasonryScrollView = ({
   columnStyle = null,
   oddColumnStyle = null,
   evenColumnStyle = null,
+  horizontal,
   ...otherProps
 }: RNMasonryScrollViewProps) => {
   const masonryGrid = generateMasonryGrid(children, columns);
 
   return (
-    <ScrollView contentContainerStyle={styles.columnStyle} {...otherProps}>
+    <ScrollView
+      contentContainerStyle={
+        horizontal ? styles.horizontalColumnStyle : styles.verticalColumnStyle
+      }
+      horizontal={horizontal}
+      {...otherProps}
+    >
       {masonryGrid.map((column, columnIndex) => {
         return (
           <View
             key={columnIndex}
             style={[
+              !horizontal
+                ? styles.horizontalColumnStyle
+                : styles.verticalColumnStyle,
               columnStyle,
               columnIndex % 2 === 0 ? evenColumnStyle : oddColumnStyle
             ]}
@@ -59,7 +69,8 @@ const RNMasonryScrollView = ({
 };
 
 const styles = StyleSheet.create({
-  columnStyle: { flexDirection: "row" }
+  verticalColumnStyle: { flexDirection: "row" },
+  horizontalColumnStyle: { flexDirection: "column" }
 });
 
 export default RNMasonryScrollView;
