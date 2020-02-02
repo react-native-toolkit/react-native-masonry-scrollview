@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Horizontal Masonry with 2 columns 1`] = `
+<ScrollView
+  contentContainerStyle={
+    Object {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+        },
+        null,
+        null,
+      ]
+    }
+  >
+    <Text>
+      Text 1
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+        },
+        null,
+        null,
+      ]
+    }
+  >
+    <Text>
+      Text 2
+    </Text>
+  </View>
+</ScrollView>
+`;
+
+exports[`Renders Horizontal Masonry with 2 columns 2`] = `
+<ScrollView
+  contentContainerStyle={
+    Object {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+        },
+        null,
+        null,
+      ]
+    }
+  >
+    <Text>
+      Text 1
+    </Text>
+    <Text>
+      Text 2
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+        },
+        null,
+        null,
+      ]
+    }
+  >
+    <Text>
+      Text 2
+    </Text>
+  </View>
+</ScrollView>
+`;
+
+exports[`Renders Vertical Masonry with 2 columns 1`] = `
+<ScrollView
+  contentContainerStyle={
+    Object {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+        },
+        null,
+        null,
+      ]
+    }
+  >
+    <Text>
+      Text 1
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+        },
+        null,
+        null,
+      ]
+    }
+  >
+    <Text>
+      Text 2
+    </Text>
+  </View>
+</ScrollView>
+`;
+
+exports[`Renders Vertical Masonry with 3 columns 1`] = `
+<ScrollView
+  contentContainerStyle={
+    Object {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+        },
+        null,
+        null,
+      ]
+    }
+  >
+    <Text>
+      Text 1
+    </Text>
+    <Text>
+      Text 2
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+        },
+        null,
+        null,
+      ]
+    }
+  >
+    <Text>
+      Text 2
+    </Text>
+  </View>
+</ScrollView>
+`;

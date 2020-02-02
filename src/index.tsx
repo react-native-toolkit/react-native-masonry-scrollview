@@ -16,7 +16,7 @@ export interface RNMasonryScrollViewProps extends ScrollViewProps {
   evenColumnStyle?: StyleProp<ViewStyle>;
 }
 
-function generateMasonryGrid<T>(data: T[], columns: number): T[][] {
+export function generateMasonryGrid<T>(data: T[], columns: number): T[][] {
   return data.reduce((collection: T[][], child: T, childIndex: number) => {
     const itemIndex = childIndex % columns;
     if (collection[itemIndex]) {
