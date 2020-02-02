@@ -4128,6 +4128,21 @@ react-native-animatable@^1.3.3:
   dependencies:
     prop-types "^15.7.2"
 
+react-native-masonry-scrollview@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-masonry-scrollview/-/react-native-masonry-scrollview-0.0.1.tgz#e2b3778f2045b1386a2695fea1b634ed58aeeeb1"
+  integrity sha512-p39ePmvA8KCLpMqdnEP/mNJ0I5xQYjiN9v8XqrEKptwkMwWFop3MWBUYF6F68tvCVXoXf0XF5q74+0mPmNx41w==
+
+react-native-responsive-dimensions@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-responsive-dimensions/-/react-native-responsive-dimensions-3.0.0.tgz#da1691ca47cec4ec1ddc846c06fefcaac011352b"
+  integrity sha512-hXjChQGFhqxW21Y9vT5yCrxqJj36APurTk2K6AZX08KK3cPyXEwIWmvEIOfoVZs54lMY2b9LSX5UOG9ft/kpxA==
+
+react-native-scalable-image@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-scalable-image/-/react-native-scalable-image-1.0.0.tgz#2751a02c2610b4266eb06ce0d466fb1eff266127"
+  integrity sha512-Hcizro1eh7GhelTIjpAYi6WR8ybHNFkMMPSpEeMNI6u1Lxt7b6o97MM9r7+g8hlUjKUlNPQvwaqcf+rW75sSfg==
+
 react-native-screens@2.0.0-alpha.12:
   version "2.0.0-alpha.12"
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.0.0-alpha.12.tgz#35a6ef3b472958e9d35f0ca9e582d0d158f8e379"
