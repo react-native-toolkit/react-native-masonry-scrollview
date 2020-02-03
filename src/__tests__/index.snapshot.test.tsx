@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import RNMasonryScrollView, { generateMasonryGrid } from "../index";
+import RNMasonryScrollView from "../index";
 import { Text } from "react-native";
 
 const column1Text = "Text 1";
@@ -26,7 +26,7 @@ const VMasonryComponentThreeColumns = () => {
       {[
         <Text key={1}>{column1Text}</Text>,
         <Text key={2}>{column2Text}</Text>,
-        <Text key={3}>{column2Text}</Text>
+        <Text key={3}>{column3Text}</Text>
       ]}
     </RNMasonryScrollView>
   );
@@ -56,13 +56,13 @@ const HMasonryComponentThreeColumns = () => {
       {[
         <Text key={1}>{column1Text}</Text>,
         <Text key={2}>{column2Text}</Text>,
-        <Text key={3}>{column2Text}</Text>
+        <Text key={3}>{column3Text}</Text>
       ]}
     </RNMasonryScrollView>
   );
 };
 
-it("Renders Horizontal Masonry with 2 columns", () => {
+it("Renders Horizontal Masonry with 3 columns", () => {
   const tree = renderer.create(<HMasonryComponentThreeColumns />).toJSON();
   expect(tree).toMatchSnapshot();
 });

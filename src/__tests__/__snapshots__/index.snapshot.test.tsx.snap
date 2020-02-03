@@ -41,7 +41,7 @@ exports[`Renders Horizontal Masonry with 2 columns 1`] = `
 </ScrollView>
 `;
 
-exports[`Renders Horizontal Masonry with 2 columns 2`] = `
+exports[`Renders Horizontal Masonry with 3 columns 1`] = `
 <ScrollView
   contentContainerStyle={
     Object {
@@ -64,7 +64,7 @@ exports[`Renders Horizontal Masonry with 2 columns 2`] = `
       Text 1
     </Text>
     <Text>
-      Text 2
+      Text 3
     </Text>
   </View>
   <View
@@ -149,7 +149,7 @@ exports[`Renders Vertical Masonry with 3 columns 1`] = `
       Text 1
     </Text>
     <Text>
-      Text 2
+      Text 3
     </Text>
   </View>
   <View
