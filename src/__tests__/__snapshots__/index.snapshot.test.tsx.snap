@@ -4,15 +4,16 @@ exports[`Renders Horizontal Masonry with 2 columns 1`] = `
 <ScrollView
   contentContainerStyle={
     Object {
-      "flexDirection": "row",
+      "flexDirection": "column",
     }
   }
+  horizontal={true}
 >
   <View
     style={
       Array [
         Object {
-          "flexDirection": "column",
+          "flexDirection": "row",
         },
         null,
         null,
@@ -27,7 +28,7 @@ exports[`Renders Horizontal Masonry with 2 columns 1`] = `
     style={
       Array [
         Object {
-          "flexDirection": "column",
+          "flexDirection": "row",
         },
         null,
         null,
@@ -45,15 +46,16 @@ exports[`Renders Horizontal Masonry with 3 columns 1`] = `
 <ScrollView
   contentContainerStyle={
     Object {
-      "flexDirection": "row",
+      "flexDirection": "column",
     }
   }
+  horizontal={true}
 >
   <View
     style={
       Array [
         Object {
-          "flexDirection": "column",
+          "flexDirection": "row",
         },
         null,
         null,
@@ -71,7 +73,7 @@ exports[`Renders Horizontal Masonry with 3 columns 1`] = `
     style={
       Array [
         Object {
-          "flexDirection": "column",
+          "flexDirection": "row",
         },
         null,
         null,

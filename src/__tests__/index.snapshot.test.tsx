@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import renderer from "react-test-renderer";
 import RNMasonryScrollView from "../index";
 import { Text } from "react-native";
@@ -15,9 +15,13 @@ const VMasonryComponentTwoColumns = () => {
   );
 };
 
-it("Renders Vertical Masonry with 2 columns", () => {
-  const tree = renderer.create(<VMasonryComponentTwoColumns />).toJSON();
+const testSnapShot = (Component: ReactElement) => {
+  const tree = renderer.create(Component).toJSON();
   expect(tree).toMatchSnapshot();
+};
+
+it("Renders Vertical Masonry with 2 columns", () => {
+  testSnapShot(<VMasonryComponentTwoColumns />);
 });
 
 const VMasonryComponentThreeColumns = () => {
@@ -33,26 +37,24 @@ const VMasonryComponentThreeColumns = () => {
 };
 
 it("Renders Vertical Masonry with 3 columns", () => {
-  const tree = renderer.create(<VMasonryComponentThreeColumns />).toJSON();
-  expect(tree).toMatchSnapshot();
+  testSnapShot(<VMasonryComponentThreeColumns />);
 });
 
 const HMasonryComponentTwoColumns = () => {
   return (
-    <RNMasonryScrollView>
+    <RNMasonryScrollView horizontal={true}>
       {[<Text key={1}>{column1Text}</Text>, <Text key={2}>{column2Text}</Text>]}
     </RNMasonryScrollView>
   );
 };
 
 it("Renders Horizontal Masonry with 2 columns", () => {
-  const tree = renderer.create(<HMasonryComponentTwoColumns />).toJSON();
-  expect(tree).toMatchSnapshot();
+  testSnapShot(<HMasonryComponentTwoColumns />);
 });
 
 const HMasonryComponentThreeColumns = () => {
   return (
-    <RNMasonryScrollView>
+    <RNMasonryScrollView horizontal={true}>
       {[
         <Text key={1}>{column1Text}</Text>,
         <Text key={2}>{column2Text}</Text>,
@@ -63,6 +65,5 @@ const HMasonryComponentThreeColumns = () => {
 };
 
 it("Renders Horizontal Masonry with 3 columns", () => {
-  const tree = renderer.create(<HMasonryComponentThreeColumns />).toJSON();
-  expect(tree).toMatchSnapshot();
+  testSnapShot(<HMasonryComponentThreeColumns />);
 });
