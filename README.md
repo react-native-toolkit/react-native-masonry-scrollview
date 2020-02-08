@@ -6,8 +6,6 @@
 
 Simple easy to use Masonry ScrollView for React Native that extends the original ScrollView ✨
 
-</div>
-
 [![Version][version-badge]][package]
 [![Downloads][downloads-badge]][npmtrends]
 
@@ -17,6 +15,8 @@ Simple easy to use Masonry ScrollView for React Native that extends the original
 [![Star on GitHub][github-star-badge]][github-star]
 [![Watch on GitHub][github-watch-badge]][github-watch]
 [![Twitter Follow][twitter-badge]][twitter]
+
+</div>
 
 ## Installation
 
