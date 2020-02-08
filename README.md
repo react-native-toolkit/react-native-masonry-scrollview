@@ -20,10 +20,10 @@ Simple easy to use Masonry ScrollView for React Native that extends the original
 
 <p align="center" >
   <kbd>
-    <img src="./assets/vertical.gif" title="Vertical Masonry" float="left">
+    <img src="./assets/vertical.gif" style="height: 480px" title="Vertical Masonry" float="left">
   </kbd>
   <kbd>
-    <img src="./assets/horizontal.gif" title="Horizontal Masonry" float="left">
+    <img src="./assets/horizontal.gif" style="height: 480px" title="Horizontal Masonry" float="right">
   </kbd>
   <br>
   <em>From the Example App</em>
