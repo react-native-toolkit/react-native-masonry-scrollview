@@ -6,6 +6,8 @@
 
 Simple easy to use Masonry ScrollView for React Native that extends the original ScrollView ✨
 
+</div>
+
 [![Version][version-badge]][package]
 [![Downloads][downloads-badge]][npmtrends]
 
@@ -15,19 +17,6 @@ Simple easy to use Masonry ScrollView for React Native that extends the original
 [![Star on GitHub][github-star-badge]][github-star]
 [![Watch on GitHub][github-watch-badge]][github-watch]
 [![Twitter Follow][twitter-badge]][twitter]
-
-</div>
-
-<p align="center" >
-  <kbd>
-    <img src="./assets/vertical.gif" style="height: 480px" title="Vertical Masonry" float="left">
-  </kbd>
-  <kbd>
-    <img src="./assets/horizontal.gif" style="height: 480px" title="Horizontal Masonry" float="right">
-  </kbd>
-  <br>
-  <em>From the Example App</em>
-</p>
 
 ## Installation
 
@@ -129,6 +118,17 @@ All the existing ScrollView Props are supported by this component since it simpl
 ## Example App
 
 The example app is built with expo, you can run the app following the official [expo docs](https://expo.io/learn).
+
+<p align="center" >
+  <kbd>
+    <img src="./assets/vertical.gif" style="height: 480px" title="Vertical Masonry" float="left">
+  </kbd>
+  <kbd>
+    <img src="./assets/horizontal.gif" style="height: 480px" title="Horizontal Masonry" float="right">
+  </kbd>
+  <br>
+  <em>From the Example App</em>
+</p>
 
 ## Licenses
 
